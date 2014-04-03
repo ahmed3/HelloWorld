@@ -1,6 +1,6 @@
 var http = require('http');
 var url = require("url");
-
+var fs = require('fs');
 // Configure our HTTP server to respond with Hello World to all requests.
 var server = http.createServer(function (request, response) {
 	 var uri = url.parse(request.url).pathname;
